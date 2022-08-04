@@ -1,0 +1,98 @@
+<style>
+  ion-content {
+ --background: url(../../assets/bbb.jpg) no-repeat center/cover fixed;
+       }
+  ion-card {
+    --background:#ffffff;
+  }
+  ion-button{
+          --background: #fa6dbab0;
+        }
+</style>
+<ion-content>
+  <br>
+  <br>
+  <br>
+  <ion-card>
+    <center><Img src="/assets/f.jpg" style="margin-top: 50px; border-radius:50%; float:center; width:200px;height:150px;"></center>
+    <ion-item>
+      <ion-icon name="person" slot="start"></ion-icon>
+      <ion-label>Hermione Granger</ion-label>
+      <ion-button fill="outline" slot="end">EDIT</ion-button>
+    </ion-item>
+  
+    <ion-card-content>
+      <ion-accordion-group>
+        <ion-accordion value="first">
+          <ion-item slot="header" color="light">
+            <ion-icon name="information-circle" slot="start"></ion-icon>
+            <ion-label>Info</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+      <ion-icon name="person" slot="start"></ion-icon>
+      <ion-label>&nbsp;Hermione Jean Granger</ion-label>
+      <br>
+      <ion-icon name="attach" slot="start"></ion-icon>
+      <ion-label>&nbsp;24 Yrs. Old</ion-label>
+      <br>
+      <ion-icon name="call" slot="start"></ion-icon>
+      <ion-label>&nbsp;09123456789</ion-label>
+      <br>
+      <ion-icon name="home" slot="start"></ion-icon>
+      <ion-label>&nbsp;Gryffindor House.</ion-label>  
+          </div>
+        </ion-accordion>
+        <ion-accordion value="second">
+          <ion-item slot="header" color="light">
+            <ion-icon name="reader" slot="start"></ion-icon>
+            <ion-label>Records</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <ion-row>
+              <ion-col>
+                Date
+                <br>03-05-22
+                <br>04-05-22
+                <br>05-06-22
+              </ion-col>
+              <ion-col>
+                Time
+                <br>8:30 AM
+                <br>10:50 AM
+                <br>2:38 PM
+              </ion-col>
+              <ion-col>
+                Remarks
+                <br>GOOD
+                <br>GOOD
+                <br>GOOD
+              </ion-col>
+            </ion-row>
+          </div>
+        </ion-accordion>
+        <ion-accordion value="third">
+          <ion-item slot="header" color="light">
+            <ion-icon name="images" slot="start"></ion-icon>
+            <ion-label>ULTRASOUND PICTURE</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <ion-label>20 WEEKS PREGNANCY</ion-label>
+            <center><Img src="/assets/ultra.jpg" style="margin-top: 50px; border-radius:10%; float:center; width:200px;height:150px;"></center>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </ion-card-content>
+  </ion-card>
+  <ion-fab horizontal="start" vertical="bottom" slot="fixed">
+    <ion-fab-button color="dark pink">
+      <ion-icon md="caret-up" ios="chevron-up-circle-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="light" href="home">
+        <ion-icon name="exit"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <center><ion-button href="book">ADD APPOINTMENT<ion-icon name="add-circle" slot="start"></ion-icon></ion-button></center>
+  <center><ion-button href="tips">THINGS TO REMEMBER!<ion-icon name="information-circle" slot="start"></ion-icon></ion-button></center>
+  </ion-content>

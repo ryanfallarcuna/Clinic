@@ -1,0 +1,51 @@
+<style>
+  ion-content {
+ --background: url(../../assets/bbb.jpg) no-repeat center/cover fixed;
+       }
+  ion-card {
+    --background:#ffffff;
+  }
+  ion-button{
+          --background: #fa6dbab0;
+        }
+</style>
+<ion-content>
+  <br>
+  <br>
+<ion-card>
+  <ion-card-content>
+    <ion-label>
+      <center><h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', san;">APPOINTMENT FORM</h1></center>
+    </ion-label>
+    <ion-item>
+      <ion-label>Name:</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Address:</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Contact No. :</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <br>
+    <p>Set Date&Time</p>
+<ion-datetime #datetime color="rose">
+  <ion-buttons slot="buttons">
+    <ion-button color="danger" (click)="datetime.reset()">Reset</ion-button>
+    <ion-button color="primary" (click)="datetime.cancel()">Never mind</ion-button>
+    <ion-button color="primary" (click)="datetime.confirm()">All Set</ion-button>
+  </ion-buttons>
+  <br>
+</ion-datetime>
+<ion-button expand="full" id="open-popover">Book Appointment</ion-button>
+<ion-popover [keepContentsMounted]="true" trigger="open-popover">
+  <ng-template>
+    <ion-content  class="ion-padding">Your Book Appointment Successfully! <br><ion-button expand="full" href="pfile">Ok</ion-button></ion-content>
+  </ng-template>
+</ion-popover>
+<ion-button expand="full" href="pfile">Cancel</ion-button>
+  </ion-card-content>
+</ion-card>
+</ion-content>

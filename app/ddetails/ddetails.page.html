@@ -1,0 +1,82 @@
+<style>
+  ion-content {
+ --background: url(../../assets/bbb.jpg) no-repeat center/cover fixed;
+       }
+  ion-card {
+    --background:#ffffff;
+  }
+  ion-button{
+          --background: #fa6dbab0;
+        }
+</style>
+<ion-content>
+  <br>
+  <br>
+  <br>
+  <ion-card>
+    <center><Img src="/assets/k.jpg" style="margin-top: 50px; border-radius:50%; float:center; width:200px;height:150px;"></center>
+    <ion-item>
+      <ion-icon name="person" slot="start"></ion-icon>
+      <ion-label>DR. CASSIEDY VILLAFUENTE </ion-label>
+      <ion-button fill="outline" slot="end" >EDIT</ion-button>
+    </ion-item>
+  
+    <ion-card-content>
+      <ion-accordion-group>
+        <ion-accordion value="first">
+          <ion-item slot="header" color="light">
+            <ion-icon name="information-circle" slot="start"></ion-icon>
+            <ion-label>Info</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+      <ion-icon name="person" slot="start"></ion-icon>
+      <ion-label>&nbsp;Dr. Cassiedy Villafuente</ion-label>
+      <br>
+      <ion-icon name="attach" slot="start"></ion-icon>
+      <ion-label>&nbsp;38 Yrs. Old</ion-label>
+      <br>
+      <ion-icon name="call" slot="start"></ion-icon>
+      <ion-label>&nbsp;09123456789</ion-label>
+      <br>
+      <ion-icon name="home" slot="start"></ion-icon>
+      <ion-label>&nbsp;Batangas City</ion-label>  
+          </div>
+        </ion-accordion>
+        <ion-accordion value="second">
+          <ion-item slot="header" color="light">
+            <ion-icon name="reader" slot="start"></ion-icon>
+            <ion-label>EDUCATIONAL BACKGROUND</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <ion-icon name="school" slot="start"></ion-icon>
+      <ion-label>&nbsp;University of Sto. Tomas (UST)</ion-label>
+      <br>
+      <ion-icon name="school" slot="start"></ion-icon>
+      <ion-label>&nbsp;Bachelor of Science in Biology</ion-label>
+      <br>
+      <ion-icon name="school" slot="start"></ion-icon>
+      <ion-label>&nbsp;4yrs Intership at UST Med. School</ion-label>
+      <br>
+      <ion-icon name="school" slot="start"></ion-icon>
+      <ion-label>&nbsp;92% score of MCAT</ion-label>
+      <br>
+      <ion-icon name="school" slot="start"></ion-icon>
+      <ion-label>&nbsp;MAGNA CUM LAUDE</ion-label>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </ion-card-content>
+  </ion-card>
+  <ion-fab horizontal="start" vertical="bottom" slot="fixed">
+    <ion-fab-button color="dark pink">
+      <ion-icon md="caret-up" ios="chevron-up-circle-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="light" href="home">
+        <ion-icon name="exit"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <center><ion-button href="reg">ADD PATIENT<ion-icon name="add-circle" slot="start"></ion-icon></ion-button></center>
+  <center><ion-button href="do">TO DO'S<ion-icon name="information-circle" slot="start"></ion-icon></ion-button></center>
+  </ion-content>
